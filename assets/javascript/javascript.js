@@ -12,7 +12,7 @@ $(document).ready(function(){
       $("#buttons-view").append(a);
     }   
   }
-  $(document).on("click", ".hero", displayCharacterInfo);
+  // 
 
   $("#add-search").on("click", function(event) {
     event.preventDefault();
@@ -20,7 +20,7 @@ $(document).ready(function(){
     heros.push(hero);
     renderButtons();
   });
-  
+  // $(document).on("click", ".hero", displayCharacterInfo);
   $("button").on("click", function(){
     $("#showGifs").empty();
     var herogif = $(this).attr("data-name");
